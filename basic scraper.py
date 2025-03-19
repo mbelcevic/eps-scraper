@@ -16,7 +16,7 @@ if response.status_code == 200:
     soup = BeautifulSoup(response.text, "html.parser")
     
     # Ask for a keyword
-    keyword = input("Enter the keyword to search for: ").strip()
+    keyword = input("Enter the keyword to search for: ").strip().capitalize()
     
     # Extract relevant information (modify based on page structure)
     data = []
